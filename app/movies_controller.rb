@@ -26,6 +26,7 @@ def can_be_created_in_a_block(args = {})
     m.lead = args[:lead]
     m.in_theaters = args[:in_theaters]
     m.save
+    m
     end
   end
 
