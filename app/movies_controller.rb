@@ -24,7 +24,7 @@ end
 
 def can_be_created_in_a_block(args = {})
   Movie.create do |m|
-    __
+    m.send{|k,v| "#{k=}", v}
   end
 end
 
